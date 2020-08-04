@@ -4,6 +4,7 @@ import './App.css';
 
 import Nasa from './components/apps/Nasa';
 import Weather from './components/apps/Weather';
+import Zomato from './components/apps/Zomato';
 
 
 
@@ -38,11 +39,17 @@ function App() {
 
   return (
     <div className="App">
-      <p>Hey</p>
-      <button> Get Location </button>
+      <h1>24 Hour Challenge</h1>
+      <br/>
+      <p><b>Your Location:</b></p>
       <span id="yo"></span>
+      <br/>
+      <hr/>
       <Nasa latitude = {latitude} longitude = {longitude} />
+      <hr/>
       <Weather latitude= {latitude} longitude = {longitude} />
+      <hr/>
+      <Zomato latitude={latitude} longitude = {longitude}/>
     </div>
   );
 }

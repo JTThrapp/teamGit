@@ -19,7 +19,7 @@ const Nasa = (props) => {
 
     return(
         <div>
-            <p>Hello</p>
+            <h5>Satellite Image based on your location:</h5>
             <img style={{width: "250px"}} src={url}/>
         </div>
     )
