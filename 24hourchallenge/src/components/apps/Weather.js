@@ -5,9 +5,19 @@ let key = "80c6adf1daf8b1ce210061d084c2ae9f"
 
 const Weather = (props) => {
 
-    let url = `${baseURL}?lon=${longitude}&lat=${latitude}&`
+    let url = `${baseURL}?lon=${props.longitude}&lat=${props.latitude}&api_key=${key}`
+    console.log(url)
 
-    fetch()
+    // fetch(url)
+    //     .then(res => res.json())
+    //     .then(json => console.log(json))
+    //     .catch(err => console.log(err));
+    
+    return(
+        <div>
+            <p>yoyoyo its the weather man</p>
+        </div>
+    )
 
 }
 
